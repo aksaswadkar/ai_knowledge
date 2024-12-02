@@ -1,2 +1,14 @@
-Introduction to Red Hat Hardware Certification Program
+Introduction to Red Hat Hardware Certification Program:
 The Red Hat Certification Program ensures compatibility of hardware and software products with Red Hat's offerings, including Red Hat Enterprise Linux and OpenStack Platform. This program consists of three main elements: a test suite for hardware or software applications undergoing certification, the Red Hat Certification Ecosystem to explore and find certified products, and a support framework that establishes a joint support relationship between partners and Red Hat. The certification encompasses a wide range of devices, such as servers, desktops, workstations, laptops, and individual components.
+
+Certification Workflow:
+To achieve hardware certification, partners must first establish a certification relationship with Red Hat. This involves setting up a test environment that includes both the partner's product and a Red Hat product. Preliminary testing is conducted to ensure compatibility before the formal certification process begins. The process starts with creating a certification request using the Red Hat Certification tool. The certification team then applies policies to create an official test plan based on the specifications provided by the partner. After running the tests specified in the test plan, results are submitted for analysis. If retesting is required, the certification team communicates this to the partner. Once all tests yield favorable results, the certified product is listed in the Red Hat Ecosystem Catalog.
+
+Partner Onboarding Process:
+Partners can create a new account for Red Hat certification by registering on the Red Hat Customer Portal with their company email ID. During registration, partners must provide essential company and product information and accept terms and conditions. If issues arise during certification, partners can open a support case through the portal or contact their assigned Ecosystem Partner Management for assistance.
+
+Setting Up Test Environment:
+Setting up the test environment requires at least two systems: one that acts as the host under test (HUT) and another that serves as the test server. Both systems must have RHEL version 8 or 9 installed for testing purposes. Partners can subscribe to the Red Hat Certification channel by using the subscription-manager command to enable specific repositories for RHEL 8 or 9.
+
+Running Tests Using Cockpit:
+Cockpit is a web-based tool that facilitates system configuration management and resource monitoring on RHEL systems. To set up Cockpit, it should be installed using yum install redhat-certification-cockpit, ensuring it runs on port 9090. To add hosts to Cockpit, you will need the IP address or hostname of both the host under test and the test server. This setup allows partners to effectively manage their testing environments and run necessary tests as part of the certification process.
